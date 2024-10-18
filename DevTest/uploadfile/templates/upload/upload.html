@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}  
+    <link rel="stylesheet" href="{% static 'upload/css/styles.css' %}">
+    <title>Upload File</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Summarizer</h1>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="file">Choose a file:</label>
+                <input type="file" name="file" id="file" required>
+            </div>
+            <button type="submit" class="btn">Upload</button>
+        </form>
+    </div>
+</body>
+</html>
