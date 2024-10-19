@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'DevTest.urls'
+ROOT_URLCONF = 'DevTest.DevTest.urls'
 
 TEMPLATES = [
     {
@@ -74,8 +74,11 @@ WSGI_APPLICATION = 'DevTest.DevTest.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> d97b46d6ceb7bbc8b6f019e7d7ae9a03a2863658
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
 
