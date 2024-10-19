@@ -1,11 +1,11 @@
 from django.shortcuts import render
 import pandas as pd
-from .forms import uploadurfile
+from .forms import uploadfile
 
 def upload_file(request):
     summary = {}
     if request.method == 'POST':
-        form = uploadurfile(request.POST, request.FILES)
+        form = uploadfile(request.POST, request.FILES)
         if form.is_valid():
             uploaded_file = request.FILES['file']
             #Process the type of the uploaded file
