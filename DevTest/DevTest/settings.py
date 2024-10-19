@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'uploadfile_app',
+    'uploadfile',
 ]
 
 MIDDLEWARE = [
@@ -74,10 +74,7 @@ WSGI_APPLICATION = 'DevTest.DevTest.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-<<<<<<< HEAD
 
-=======
->>>>>>> b288046b0cecf525a6964641d9e52d3e01e1bfcd
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
