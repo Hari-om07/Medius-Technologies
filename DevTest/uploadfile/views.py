@@ -3,7 +3,6 @@ import pandas as pd
 from .forms import uploadfile
 
 def upload_file(request):
-    summary = {}
     if request.method == 'POST':
         form = uploadfile(request.POST, request.FILES)
         if form.is_valid():
