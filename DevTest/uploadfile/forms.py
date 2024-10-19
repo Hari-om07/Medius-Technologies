@@ -1,4 +1,4 @@
 from django import forms
 
-class uploadurfile(forms.Form):
+class uploadfile(forms.Form):
     file = forms.FileField(label = 'Upload Excel/CSV File')
