@@ -116,7 +116,7 @@ USE_TZ = True
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-STATIC_URL = '/uploadfile/static/'
+STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'uploadfile/static/styles.css'),  # Adjust this path to your static folder
