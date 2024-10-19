@@ -23,6 +23,6 @@ def upload_file(request):
             return render(request, 'upload/result.html', {'summary':summary})
         
     else:
-        form = uploadurfile()
+        form = uploadfile()
 
     return render(request, 'upload/upload.html', {'form':form})
