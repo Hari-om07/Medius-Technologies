@@ -23,5 +23,7 @@ def upload_file(request):
         
     else:
         form = uploadfile()
-
+        
+    static_path = os.path.join(settings.BASE_DIR, 'DevTest/uploadfile/static/styles.css')
+    print(f'Static file path: {static_path}') 
     return render(request, 'upload/upload.html', {'form':form})
