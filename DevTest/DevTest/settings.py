@@ -114,10 +114,12 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_URL = '/DevTest/uploadfile/static/'
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    BASE_DIR / "uploadfile/static",
+    os.path.join(BASE_DIR, 'uploadfile/static'),  # Adjust this path to your static folder
 ]
 
 
