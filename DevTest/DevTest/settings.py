@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'DevTest.DevTest.urls'
+ROOT_URLCONF = 'DevTest.urls'
 
 TEMPLATES = [
     {
@@ -68,17 +68,18 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'DevTest.DevTest.wsgi.application'
+WSGI_APPLICATION = 'DevTest.wsgi.application'
 
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',  # Use your desired database engine
+        'NAME': BASE_DIR / "db.sqlite3",  # Replace with your database name or path
+    }
+}
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> d97b46d6ceb7bbc8b6f019e7d7ae9a03a2863658
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
 
