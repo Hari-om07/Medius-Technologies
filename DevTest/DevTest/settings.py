@@ -30,7 +30,7 @@ ALLOWED_HOSTS = ['medius-technologies-0am6.onrender.com', 'localhost', '127.0.0.
 # Application definition
 
 INSTALLED_APPS = [
-    'uploadfile',
+    'DevTest.uploadfile',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -49,7 +49,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'DevTest.urls'
+ROOT_URLCONF = 'DevTest.DevTest.urls'
 
 TEMPLATES = [
     {
