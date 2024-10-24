@@ -30,7 +30,7 @@ ALLOWED_HOSTS = ['medius-technologies-0am6.onrender.com', 'localhost', '127.0.0.
 # Application definition
 
 INSTALLED_APPS = [
-    'DevTest.DevTest.uploadfile',
+    'DevTest.uploadfile',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
