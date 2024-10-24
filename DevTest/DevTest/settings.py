@@ -31,7 +31,7 @@ ALLOWED_HOSTS = ['medius-technologies-0am6.onrender.com', 'localhost', '127.0.0.
 # Application definition
 
 INSTALLED_APPS = [
-    'DevTest.uploadfile',
+    'uploadfile',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'DevTest.DevTest.urls'
+ROOT_URLCONF = 'DevTest.urls'
 
 TEMPLATES = [
     {
@@ -117,10 +117,10 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    BASE_DIR / "uploadfile/static",
+    BASE_DIR / "static",
 ]
 
-STATIC_ROOT = BASE_DIR / "staticfiles"
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
